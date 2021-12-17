@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Congreso de física</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Formulario de inscripción</h1>
+            <p id="description">Para inscribirte al congreso debes diligenciar el siguiente formulario</p>
+        </header>
+        <div class="principal">
+            <!--Animation-->
+        </div>
+        <form action="" id="survey-form">
+            <div class="to-fill">
+                <label for="nombres">Nombres*</label>
+                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+
+                <label for="apellidos">Apellidos*</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa tu apellido" required>
+
+                <label for="email">Email*</label>
+                <input type="text" name="email" id="email" placeholder="Ingresa tu email" required>
+
+                <label for="telefono">Teléfono*</label>
+                <input type="text" name="telefono" id="telefono" placeholder="Ingresa tu número de contacto" required>
+
+                <label for="edad">Edad</label>
+                <input type="edad" name="name" id="edad" placeholder="Ingresa tu edad" required>
+            </div>
+            <div class="select">
+                <p>¿Qué tipo de rol tendrás en el evento?</p>
+                <select name="" id="">
+                    <option disabled selected value>Selecciona tu rol</option>
+                    <option value="asistente">Asistente</option>
+                    <option value="ponente">Ponente</option>
+                    <option value="logística">Logística</option>
+                </select>
+            </div>
+            <div class="radio">
+                <p>¿Deseas recibir información acerca otros eventos?</p>
+                <label for="">SI</label>
+                <input type="radio">
+
+                <label for="">NO</label>
+                <input type="radio">
+            </div>
+            <div class="check">
+                <p>Selecciona tus temas de interés</p>
+                <label for="">Maching Learning</label>
+                <input type="checkbox">
+
+                <label for="">Ingeniería</label>
+                <input type="checkbox">
+
+                <label for="">Matemática</label>
+                <input type="checkbox">
+
+                <label for="">Física</label>
+                <input type="checkbox">
+
+                <label for="">Desarrollo Web</label>
+                <input type="checkbox">
+                
+                <label for="">Desarrollo móvil</label>
+                <input type="checkbox">
+            </div>
+            <div class="submit">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
