@@ -19,23 +19,23 @@
         <form action="" id="survey-form">
             <div class="to-fill">
                 <label for="nombres">Nombres*</label>
-                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required >
 
                 <label for="apellidos">Apellidos*</label>
                 <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa tu apellido" required>
 
                 <label for="email">Email*</label>
-                <input type="text" name="email" id="email" placeholder="Ingresa tu email" required>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email" required>
 
                 <label for="telefono">Teléfono*</label>
-                <input type="text" name="telefono" id="telefono" placeholder="Ingresa tu número de contacto" required>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu número de contacto" required>
 
                 <label for="edad">Edad</label>
-                <input type="edad" name="name" id="edad" placeholder="Ingresa tu edad" required>
+                <input type="number"  name="edad" id="edad" placeholder="Ingresa tu edad" required >
             </div>
             <div class="select">
                 <p>¿Qué tipo de rol tendrás en el evento?</p>
-                <select name="" id="">
+                <select name="selector" id="selector" required >
                     <option disabled selected value>Selecciona tu rol</option>
                     <option value="asistente">Asistente</option>
                     <option value="ponente">Ponente</option>
@@ -44,35 +44,36 @@
             </div>
             <div class="radio">
                 <p>¿Deseas recibir información acerca otros eventos?</p>
-                <label for="">SI</label>
-                <input type="radio">
+                <label>SI</label>
+                <input type="radio" name="notification" value="si">
 
-                <label for="">NO</label>
-                <input type="radio">
+                <label>NO</label>
+                <input type="radio" name="notification" value="no">
             </div>
             <div class="check">
                 <p>Selecciona tus temas de interés</p>
-                <label for="">Maching Learning</label>
-                <input type="checkbox">
+                <label >Maching Learning</label>
+                <input type="checkbox" name="tema" value="maching">
 
-                <label for="">Ingeniería</label>
-                <input type="checkbox">
+                <label >Ingeniería</label>
+                <input type="checkbox" name="tema" value="eng">
 
-                <label for="">Matemática</label>
-                <input type="checkbox">
+                <label >Matemática</label>
+                <input type="checkbox" name="tema" value="math">
 
-                <label for="">Física</label>
-                <input type="checkbox">
+                <label >Física</label>
+                <input type="checkbox" name="tema" value="phy"> 
 
-                <label for="">Desarrollo Web</label>
-                <input type="checkbox">
+                <label >Desarrollo Web</label>
+                <input type="checkbox" name="tema" value="web">
                 
-                <label for="">Desarrollo móvil</label>
-                <input type="checkbox">
+                <label>Desarrollo móvil</label>
+                <input type="checkbox" name="tema" value="mov">
             </div>
             <div class="submit">
                 <button type="submit">Enviar</button>
             </div>
+            <p>¡Gracias por inscribirte, nos dará gusto tenerte en este evento!</p>
         </form>
     </div>
 </body>
