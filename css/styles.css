@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+3:wght@300&display=swap');
+/*Generales*/
 *{ 
-    margin:0px 15px;
+  margin:0px 15px;  
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans 3', sans-serif; 
+  }
 body::before{
     content: '';
     position: fixed;
@@ -10,30 +18,92 @@ body::before{
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--color-darkblue);
     background-image: linear-gradient(
         115deg,
-        rgba(85, 70, 72, 0.8),
-        rgba(50, 50, 107, 0.7)
+        rgba(158, 117, 108, 0.8),
+        rgba(206, 178, 136, 0.7)
       ),
-      url(https://cdn.pixabay.com/photo/2017/10/04/14/12/auditorium-2816353__340.jpg);
+      url(https://cdn.pixabay.com/photo/2017/10/04/14/12/auditorium-2816353__340.jpg); 
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+/*Encabezado*/
 h1{
     padding: 20px;
+    font-size:45px;
 }    
 .header{
     text-align: center;
     padding: 10px;
     color: white;
+    font-weight: bolder;
 }
+/*Formulario general*/
 form{
-    background-color: rgb(246, 246, 250);
+    background-color: rgba(109, 95, 93, 0.75);
+    color: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 4px white;
+    font-weight: bold;
+    max-width: 700px; 
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgb(61, 57, 57);
+    border: 1px solid rgba(109, 95, 93, 0.75);
 }
+label {
+    display: flex;
+    font-size: 1.1rem;
+    margin: 20px;
+    
+}
+/*Entradas*/
+
+@media (min-width: 600px) {
+    input {
+      width: 500px;
+    }
+  }
+.entrada{
+    display:block;
+    margin: auto;
+    height: 50px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.138); 
+    border: 1px solid #ced4da;
+    border-radius: 3px; 
+    position: relative;
+    right:9px;
+}
+::placeholder{
+    padding: 20px;
+    color: white;
+
+}
+select{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    position: relative;
+    color: white;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.138); 
+    border: 1px solid #ced4da;
+    border-radius: 3px; 
+}
+option{
+    background-color:rgba(255, 255, 255, 0.138); ;
+    color: black;
+    border-radius: 30px;
+}
+
+
+
+
+    
+
 
 
