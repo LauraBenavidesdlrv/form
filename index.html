@@ -16,7 +16,7 @@
         <div class="principal">
             <!--Animation-->
         </div>
-        <form action="" id="survey-form">
+        <form action="" id="entradas">
             <div class="to-fill">
                 <label for="nombres entrada">Nombres*</label>
                 <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required class="entrada" >
@@ -47,39 +47,42 @@
                 </div>
             </div><br>
             <div>
-                <p>¿Deseas recibir información acerca otros eventos?</p>
-                <label>SI</label>
-                <input type="radio" name="notification" value="si" class="radio">
+                <p>¿Deseas recibir información acerca otros eventos?</p><br>
+                <div class="rad">
+                    <label>SI</label>
+                    <input type="radio" name="notification" value="si" class="radio">
 
-                <label>NO</label>
-                <input type="radio" name="notification" value="no" class="radio">
+                    <label>NO</label>
+                    <input type="radio" name="notification" value="no" class="radio">
+                </div>
             </div>
             
-            <div class="check">
-                <p>Selecciona tus temas de interés</p>
+            <div>
+                <p>Selecciona tus temas de interés</p><br>
                 <ul>
+                    <div class="check">
+                        <label >Maching Learning</label>
+                        <input type="checkbox" name="tema" value="maching">
 
-                    <label >Maching Learning</label>
-                    <input type="checkbox" name="tema" value="maching">
+                        <label >Ingeniería</label>
+                        <input type="checkbox" name="tema" value="eng">
 
-                    <label >Ingeniería</label>
-                    <input type="checkbox" name="tema" value="eng">
+                        <label >Matemática</label>
+                        <input type="checkbox" name="tema" value="math">
 
-                    <label >Matemática</label>
-                    <input type="checkbox" name="tema" value="math">
+                        <label >Física</label>
+                        <input type="checkbox" name="tema" value="phy"> 
 
-                    <label >Física</label>
-                    <input type="checkbox" name="tema" value="phy"> 
-
-                    <label >Desarrollo Web</label>
-                    <input type="checkbox" name="tema" value="web">
-                    
-                    <label>Desarrollo móvil</label>
-                    <input type="checkbox" name="tema" value="mov">
+                        <label >Desarrollo Web</label>
+                        <input type="checkbox" name="tema" value="web">
+                        
+                        <label>Desarrollo móvil</label>
+                        <input type="checkbox" name="tema" value="mov">
+                    </div>
                 </ul><br>
             </div>
             <div class="submit">
-                <button type="submit">Enviar</button>
+                <button type="submit" id="submit">Enviar</button>
             </div><br>
             <p style="text-align: center;">¡Gracias por inscribirte, nos dará gusto tenerte en este evento!</p>
         </form>
