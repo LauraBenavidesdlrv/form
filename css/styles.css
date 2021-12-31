@@ -40,23 +40,32 @@ h1{
     color: white;
     font-weight: bolder;
 }
+p{
+  font-size: 1.1em;
+}
 /*Formulario general*/
 form{
-    background-color: rgba(109, 95, 93, 0.75);
-    color: white;
-    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(100, 93, 93);
+    padding: 50px;
     border-radius: 8px;
     font-weight: bold;
     max-width: 700px; 
     margin: auto;
     margin-top: 30px;
-    box-shadow: 0 0 10px rgb(61, 57, 57);
+    box-shadow: 0 0 10px rgb(107, 100, 100);
     border: 1px solid rgba(109, 95, 93, 0.75);
 }
-label {
+.to-fill label {
     font-size: 1.1rem;  
+    position: absolute;
+    margin-top:18px ;
 }
 /*Entradas*/
+input{
+  padding-left: 15px;
+  font-size: 1.1em;
+}
 
 @media (min-width: 600px) {
     input {
@@ -66,17 +75,16 @@ label {
 .entrada{
     display:block;
     margin: auto;
-    height: 50px;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.138); 
-    border: 1px solid #ced4da;
+    height: 60px;
+    color: rgb(138, 124, 124);
+    background-color: rgba(89, 78, 78, 0.09); 
+    border: 1px solid #a6abaf;
     border-radius: 3px; 
     width: 100%;
     margin-bottom: 40px;
 }
 ::placeholder{
-    padding: 20px;
-    color: white;
+    color: rgb(165, 153, 153);
 
 }
 select{
@@ -84,10 +92,11 @@ select{
     margin: auto;
     width: 100%;
     height: 50px;
-    color: white;
+    color: rgb(100, 93, 93);
     background-color: rgba(255, 255, 255, 0.138); 
-    border: 1px solid #ced4da;
+    border: 1px solid #a6abaf;
     border-radius: 3px; 
+    font-size: 1.1em;
 
 }
 option{
@@ -111,11 +120,13 @@ option{
 #submit{
   display: block;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.138); 
-  border: 1px solid #ced4da;
+  background-color: rgba(100, 92, 92, 0.726); 
+  border: 1px solid #a6abaf;
   border-radius: 3px; 
-  color: white;
+  color: rgb(245, 241, 241);
   padding: 15px 20px;
+  width: 100%;
+  font-size: 1.1em;
 }
 
 
