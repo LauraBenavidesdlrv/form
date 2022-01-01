@@ -59,14 +59,19 @@ form{
 .to-fill label {
     font-size: 1.1rem;  
     position: absolute;
-    margin-top:18px ;
+    margin-top:-84px ;
 }
 /*Entradas*/
 input{
   padding-left: 15px;
   font-size: 1.1em;
 }
-
+.entrada:focus + .label-input{
+  margin-top: -131px;
+}
+.mantener{
+  margin-top: -131px;
+}
 @media (min-width: 600px) {
     input {
       width: 500px;

@@ -18,22 +18,23 @@
         </div>
         <form action="" id="entradas">
             <div class="to-fill">
-                <label for="nombres">Nombres*</label>
+
                 <input type="text" name="name" id="name" required class="entrada" >
-
-                <label for="apellidos">Apellidos*</label>
+                <label for="nombres" class="label-input">Nombres*</label>
+                
                 <input type="text" name="apellidos" id="apellidos" required class="entrada">
+                <label for="apellidos" class="label-input">Apellidos*</label>
 
-                <label for="email">Email*</label>
                 <input type="email" name="email" id="email"  required class="entrada">
-
-                <label for="telefono">Teléfono*</label>
+                <label for="email" class="label-input">Email*</label>
+                
                 <input type="tel" name="telefono" id="telefono" required class="entrada">
-
-                <label for="edad">Edad</label>
+                <label for="telefono" class="label-input">Teléfono*</label>
+                
                 <input type="number"  name="edad" id="edad" class="entrada" >
+                <label for="edad" class="label-input">Edad</label>
+                
             </div><br>
-            
             <div class="select"> 
                 <p>¿Qué tipo de rol tendrás en el evento?</p><br>
                 <div>
@@ -90,5 +91,6 @@
             <p style="padding: 20px; text-align:center;">Copyright © 2021 UNIES. All rights reserved.</p>
         </footer>
     </div>
+    <script src="/js/form.js" ></script>
 </body>
-</html>
+</html> 
