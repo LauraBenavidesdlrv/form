@@ -1,6 +1,7 @@
-var input = document.getElementsByClassName('entrada');
-for (let j = 0; j < input.length; j++){
-    input[j].addEventListener('keyup', function() {
+alert("Completa este formulario solo si deseas inscribirte al congreso 😀");
+var inp = document.getElementsByClassName('entrada');
+for (let j = 0; j < inp.length; j++){
+    inp[j].addEventListener('keyup', function() {
         if (this.value.length >= 1){
             this.nextElementSibling.classList.add('mantener');   //adiciona la clase al elemento posterior
         }else{
