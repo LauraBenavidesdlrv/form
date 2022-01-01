@@ -1,6 +1,6 @@
-var fill = document.getElementsByClassName('entrada');
-for (var i = 0; i < fill.length; i++){
-    fill[i].addEventListener('keyup', function() {
+var input = document.getElementsByClassName('entrada');
+for (let j = 0; j < input.length; j++){
+    input[j].addEventListener('keyup', function() {
         if (this.value.length >= 1){
             this.nextElementSibling.classList.add('mantener');   //adiciona la clase al elemento posterior
         }else{
@@ -8,4 +8,5 @@ for (var i = 0; i < fill.length; i++){
         }
     });
 }
+
   
