@@ -1,4 +1,4 @@
-alert("Completa este formulario solo si deseas inscribirte al congreso 😀");
+alert("Completa este formulario solo si deseas inscribirte a nuestro evento 😀");
 var inp = document.getElementsByClassName('entrada');
 for (let j = 0; j < inp.length; j++){
     inp[j].addEventListener('keyup', function() {
